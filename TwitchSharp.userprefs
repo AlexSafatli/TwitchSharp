@@ -1,1 +1,1 @@
-﻿<Properties StartupItem="TwitchSharp.csproj" />
+﻿<Properties StartupItem="Tests/TwitchSharpTests.csproj" />
