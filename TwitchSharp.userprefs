@@ -1,1 +1,21 @@
-﻿<Properties StartupItem="Tests/TwitchSharpTests.csproj" />
+﻿<Properties StartupItem="TwitchSharp.csproj">
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="TwitchClient.cs">
+    <Files>
+      <File FileName="Interfaces/ITwitchClient.cs" Line="2" Column="2" />
+      <File FileName="Model/TwitchAbstractChannel.cs" Line="20" Column="20" />
+      <File FileName="Model/TwitchAbstractGame.cs" Line="38" Column="38" />
+      <File FileName="Model/TwitchAbstractStream.cs" Line="18" Column="18" />
+      <File FileName="Model/TwitchAbstractTeam.cs" Line="18" Column="18" />
+      <File FileName="Model/TwitchAbstractUser.cs" Line="1" Column="1" />
+      <File FileName="Model/TwitchAbstractVideo.cs" Line="1" Column="1" />
+      <File FileName="TwitchClient.cs" Line="17" Column="17" />
+      <File FileName="Model/TwitchChannel.cs" Line="13" Column="13" />
+      <File FileName="Tests/Program.cs" Line="4" Column="4" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

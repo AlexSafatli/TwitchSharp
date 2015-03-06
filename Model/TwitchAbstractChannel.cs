@@ -1,17 +1,20 @@
 ﻿using System.Collections.Generic;
+using RestSharp.Deserializers;
 
 namespace TwitchSharp {
 	public abstract class TwitchAbstractChannel {
 	
 		/* Model Fields */
-		//public TwitchStream Stream { get; }
-		//public List<TwitchUser> Editors { get; }
-		//public List<TwitchVideo> Videos { get; }
-		//public List<TwitchUser> Follows { get; }
-		//public List<TwitchTeam> Teams { get; }
-		//public TwitchGame Game { get; set; }
+		public TwitchAbstractStream Stream { get; }
+		public List<TwitchAbstractUser> Editors { get; }
+		public List<TwitchAbstractVideo> Videos { get; }
+		public List<TwitchAbstractUser> Follows { get; }
+		public List<TwitchAbstractTeam> Teams { get; }
+		public TwitchAbstractGame GameObject { get; }
 
 		/* Meta Fields */
+		[DeserializeAs(Name = "game")]
+		public string GameName { get; set; }
 		public string Mature { get; set; }
 		public string Status { get; set; }
 		public string BroadcasterLanguage { get; set; }
@@ -30,9 +33,12 @@ namespace TwitchSharp {
 		public float Delay { get; set; }
 
 		/* Operations */
+		public bool Equals(TwitchAbstractChannel obj) {
+			return (URL.Equals(obj.URL) && Name.Equals(obj.Name));
+		}
 		public abstract void refresh(TwitchClient client);
 		public abstract bool updateStatus(TwitchClient client, string status);
-		//public abstract bool updateGame(TwitchClient client, TwitchGame game);
+		public abstract bool updateGame(TwitchClient client, TwitchGame game);
 		public abstract bool updateDelay(TwitchClient client, int delay);
 
 	}

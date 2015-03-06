@@ -11,10 +11,10 @@
 			throw new System.NotImplementedException ();
 		}
 
-		/*public override bool updateGame (TwitchClient client, TwitchGame game)
+		public override bool updateGame (TwitchClient client, TwitchGame game)
 		{
 			throw new System.NotImplementedException ();
-		}*/
+		}
 
 		public override bool updateDelay (TwitchClient client, int delay)
 		{

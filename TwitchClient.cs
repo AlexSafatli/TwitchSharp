@@ -3,7 +3,7 @@ using System.Configuration;
 
 namespace TwitchSharp {
 
-	public class TwitchClient : RestClient {
+	public class TwitchClient : RestClient, ITwitchClient {
 
 		private static readonly string apiUrl = "https://api.twitch.tv/kraken";
 		private static readonly string apiAcceptHeader = "application/vnd.twitchtv.v3+json";
