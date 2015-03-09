@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 
 namespace TwitchSharp {
-	public abstract class TwitchAbstractGame {
+	public abstract class TwitchAbstractGame : ITwitchEntity {
 
 		/* Model Fields */
 
@@ -9,6 +9,7 @@ namespace TwitchSharp {
 		public string Name { get; set; }
 		public List<string> Box { get; set; }
 		public List<string> Logo { get; set; }
+		public string ID { get; set; }
 
 		/* Operations */
 

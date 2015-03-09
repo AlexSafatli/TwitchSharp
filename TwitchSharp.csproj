@@ -45,6 +45,8 @@
     <Compile Include="TwitchClient.cs" />
     <Compile Include="Model\TwitchChannel.cs" />
     <Compile Include="Model\TwitchGame.cs" />
+    <Compile Include="Model\ITwitchEntity.cs" />
+    <Compile Include="Model\TwitchStream.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>

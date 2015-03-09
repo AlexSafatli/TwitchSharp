@@ -1,17 +1,22 @@
 ﻿<Properties StartupItem="TwitchSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="TwitchClient.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Tests/Test.cs">
     <Files>
-      <File FileName="Interfaces/ITwitchClient.cs" Line="2" Column="2" />
-      <File FileName="Model/TwitchAbstractChannel.cs" Line="20" Column="20" />
-      <File FileName="Model/TwitchAbstractGame.cs" Line="38" Column="38" />
-      <File FileName="Model/TwitchAbstractStream.cs" Line="18" Column="18" />
-      <File FileName="Model/TwitchAbstractTeam.cs" Line="18" Column="18" />
-      <File FileName="Model/TwitchAbstractUser.cs" Line="1" Column="1" />
-      <File FileName="Model/TwitchAbstractVideo.cs" Line="1" Column="1" />
-      <File FileName="TwitchClient.cs" Line="17" Column="17" />
-      <File FileName="Model/TwitchChannel.cs" Line="13" Column="13" />
-      <File FileName="Tests/Program.cs" Line="4" Column="4" />
+      <File FileName="Interfaces/ITwitchClient.cs" Line="1" Column="1" />
+      <File FileName="Model/TwitchAbstractChannel.cs" Line="19" Column="19" />
+      <File FileName="Model/TwitchAbstractGame.cs" Line="16" Column="16" />
+      <File FileName="Model/TwitchAbstractStream.cs" Line="16" Column="16" />
+      <File FileName="Model/TwitchAbstractTeam.cs" Line="16" Column="16" />
+      <File FileName="Model/TwitchAbstractUser.cs" Line="16" Column="16" />
+      <File FileName="Model/TwitchAbstractVideo.cs" Line="3" Column="3" />
+      <File FileName="TwitchClient.cs" Line="1" Column="1" />
+      <File FileName="Model/TwitchChannel.cs" Line="54" Column="54" />
+      <File FileName="Tests/packages.config" Line="1" Column="1" />
+      <File FileName="Tests/Test.cs" Line="32" Column="32" />
+      <File FileName="Model/TwitchGame.cs" Line="1" Column="1" />
+      <File FileName="packages.config" Line="1" Column="1" />
+      <File FileName="Model/ITwitchEntity.cs" Line="9" Column="9" />
+      <File FileName="Model/TwitchStream.cs" Line="2" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
-using System;
+using System.Collections.Generic;
 using TwitchSharp;
+using System;
 
 namespace Tests {
 
@@ -13,12 +14,19 @@ namespace Tests {
 			client = new TwitchClient();
 		}
 
-		[Test ()]
-		public void TestCase () {
+		[Test()]
+		public void Test_ChannelByName() {
 			TwitchChannel ch = client.ChannelByName("amazhs");
 			Assert.NotNull(ch);
 			Assert.NotNull(ch.Name);
 			Assert.NotNull(ch.GameName);
+		}
+
+		[Test()]
+		public void Test_ChannelSearch() {
+			List<TwitchChannel> ch = client.SearchForChannels("amaz");
+			Assert.NotNull(ch);
+			Console.Error.WriteLine(ch);
 		}
 
 	}
