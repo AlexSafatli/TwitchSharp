@@ -8,8 +8,7 @@ namespace TwitchSharp {
 		private static readonly string apiUrl = "https://api.twitch.tv/kraken";
 		private static readonly string apiAcceptHeader = "application/vnd.twitchtv.v3+json";
 
-		public TwitchClient() : base(apiUrl) {
-		}
+		public TwitchClient() : base(apiUrl) { }
 
 		/* Boilerplate Request Code */
 		private RestRequest TwitchGetRequest(string requestUrl) {

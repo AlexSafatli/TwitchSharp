@@ -14,8 +14,11 @@ namespace TwitchSharp {
 		public string ID { get; set; }
 
 		/* Operations */
-		public abstract List<TwitchAbstractStream> StreamsFollowed();
-		public abstract List<TwitchAbstractVideo> VideosFollowed();
+		public abstract List<TwitchAbstractUser> UsersBlocked(TwitchClient cl);
+		public abstract void AddUserToBlocks(TwitchClient cl, TwitchAbstractUser user);
+		public abstract void DeleteUserFromBlocks(TwitchClient cl, TwitchAbstractUser user);
+		public abstract List<TwitchAbstractStream> StreamsFollowed(TwitchClient cl);
+		public abstract List<TwitchAbstractVideo> VideosFollowed(TwitchClient cl);
 
 	}
 }
