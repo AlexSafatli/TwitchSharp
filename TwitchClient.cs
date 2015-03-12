@@ -18,6 +18,7 @@ namespace TwitchSharp {
 		}
 
 		/* Searching */
+		// TODO Get searching working properly (make custom List objects).
 		public List<TwitchChannel> SearchForChannels(string searchQuery) {
 			RestRequest request = TwitchGetRequest(string.Format("search/channels?q={0}",searchQuery));
 			return ((RestResponse<List<TwitchChannel>>)Execute<List<TwitchChannel>>(request)).Data;

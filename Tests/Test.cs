@@ -26,7 +26,17 @@ namespace Tests {
 		public void Test_ChannelSearch() {
 			List<TwitchChannel> ch = client.SearchForChannels("amaz");
 			Assert.NotNull(ch);
-			Console.Error.WriteLine(ch);
+			Assert.IsNotEmpty(ch);
+		}
+
+		[Test()]
+		public void Test_GameSearch() {
+			List<TwitchGame> gm = client.SearchForGames("League of Legends");
+			Assert.NotNull(gm);
+			Assert.IsNotEmpty(gm);
+			TwitchGame leagueGame = gm[0];
+			Assert.NotNull(leagueGame.Name);
+			Assert.Equals(leagueGame.Name, "League of Legends");
 		}
 
 	}

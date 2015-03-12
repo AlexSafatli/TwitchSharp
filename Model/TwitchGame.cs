@@ -1,8 +1,5 @@
-﻿using System;
-
-namespace TwitchSharp
-{
+﻿namespace TwitchSharp {
 	public class TwitchGame : TwitchAbstractGame {
-
+	
 	}
 }

@@ -47,11 +47,15 @@
     <Compile Include="Model\TwitchGame.cs" />
     <Compile Include="Model\ITwitchEntity.cs" />
     <Compile Include="Model\TwitchStream.cs" />
+    <Compile Include="Model\TwitchBadge.cs" />
+    <Compile Include="Model\TwitchEmoticon.cs" />
+    <Compile Include="Deserializers\TwitchDeserializer.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
     <Folder Include="Interfaces\" />
     <Folder Include="Model\" />
+    <Folder Include="Deserializers\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
