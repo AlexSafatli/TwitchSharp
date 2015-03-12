@@ -21,15 +21,18 @@ namespace TwitchSharp {
 		// TODO Get searching working properly (make custom List objects).
 		public List<TwitchChannel> SearchForChannels(string searchQuery) {
 			RestRequest request = TwitchGetRequest(string.Format("search/channels?q={0}",searchQuery));
-			return ((RestResponse<List<TwitchChannel>>)Execute<List<TwitchChannel>>(request)).Data;
+			var search = ((RestResponse<TwitchSearch>)Execute<TwitchSearch>(request)).Data;
+			return search.Channels;
 		}
 		public List<TwitchStream> SearchForStreams(string searchQuery) {
 			RestRequest request = TwitchGetRequest(string.Format("search/streams?q={0}",searchQuery));
-			return ((RestResponse<List<TwitchStream>>)Execute<List<TwitchStream>>(request)).Data;
+			var search = ((RestResponse<TwitchSearch>)Execute<TwitchSearch>(request)).Data;
+			return search.Streams;
 		}
 		public List<TwitchGame> SearchForGames(string searchQuery) {
-			RestRequest request = TwitchGetRequest(string.Format("search/games?q={0}",searchQuery));
-			return ((RestResponse<List<TwitchGame>>)Execute<List<TwitchGame>>(request)).Data;
+			RestRequest request = TwitchGetRequest(string.Format("search/games?q={0}&type=suggest",searchQuery));
+			var search = ((RestResponse<TwitchSearch>)Execute<TwitchSearch>(request)).Data;
+			return search.Games;
 		}
 
 		/* Objects By Name */
