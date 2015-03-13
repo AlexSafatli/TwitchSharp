@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace TwitchSharp
+﻿namespace TwitchSharp
 {
 	public class TwitchStream : TwitchAbstractStream {
 
