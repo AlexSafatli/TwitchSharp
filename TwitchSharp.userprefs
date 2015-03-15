@@ -1,26 +1,32 @@
 ﻿<Properties StartupItem="TwitchSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Model/TwitchAbstractUser.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Model/TwitchStream.cs">
     <Files>
       <File FileName="Interfaces/ITwitchClient.cs" Line="1" Column="1" />
-      <File FileName="Model/TwitchAbstractChannel.cs" Line="1" Column="1" />
-      <File FileName="Model/TwitchAbstractGame.cs" Line="1" Column="1" />
+      <File FileName="Model/TwitchAbstractChannel.cs" Line="12" Column="12" />
+      <File FileName="Model/TwitchAbstractGame.cs" Line="19" Column="19" />
       <File FileName="Model/TwitchAbstractStream.cs" Line="1" Column="1" />
       <File FileName="Model/TwitchAbstractTeam.cs" Line="1" Column="1" />
       <File FileName="Model/TwitchAbstractUser.cs" Line="3" Column="3" />
       <File FileName="Model/TwitchAbstractVideo.cs" Line="1" Column="1" />
-      <File FileName="TwitchClient.cs" Line="4" Column="4" />
+      <File FileName="TwitchClient.cs" Line="1" Column="1" />
       <File FileName="Model/TwitchChannel.cs" Line="1" Column="1" />
       <File FileName="Tests/packages.config" Line="1" Column="1" />
-      <File FileName="Tests/Test.cs" Line="1" Column="1" />
-      <File FileName="Model/TwitchGame.cs" Line="1" Column="1" />
+      <File FileName="Tests/Test.cs" Line="2" Column="2" />
+      <File FileName="Model/TwitchGame.cs" Line="2" Column="2" />
       <File FileName="packages.config" Line="1" Column="1" />
       <File FileName="Model/TwitchStream.cs" Line="1" Column="1" />
-      <File FileName="Model/ITwitchEntity.cs" Line="20" Column="20" />
+      <File FileName="Model/ITwitchEntity.cs" Line="1" Column="1" />
+      <File FileName="Model/TwitchBadge.cs" Line="20" Column="20" />
+      <File FileName="Model/TwitchEmoticon.cs" Line="3" Column="3" />
+      <File FileName="Model/TwitchSearch.cs" Line="2" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/alexsafatli/Documents/Repositories/TwitchSharp/Tests/Test.cs" line="38" column="10" />
+      <Breakpoint file="/Users/alexsafatli/Documents/Repositories/TwitchSharp/TwitchClient.cs" line="34" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
 </Properties>
