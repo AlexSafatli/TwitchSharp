@@ -5,7 +5,7 @@ namespace TwitchSharp {
 	public abstract class TwitchAbstractChannel : ITwitchEntity {
 	
 		/* Model Fields */
-		public TwitchAbstractStream Stream { get; set;}
+		public TwitchAbstractStream Stream { get; set; }
 		public List<TwitchAbstractUser> Editors { get; set; }
 		public List<TwitchAbstractVideo> Videos { get; set; }
 		public List<TwitchAbstractUser> Follows { get; set; }

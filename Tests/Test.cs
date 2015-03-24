@@ -23,6 +23,14 @@ namespace Tests {
 		}
 
 		[Test()]
+		public void Test_UserByName() {
+			TwitchUser us = client.UserByName("amazhs");
+			Assert.NotNull(us);
+			Assert.NotNull(us.DisplayName);
+			Assert.AreEqual("amazhs",us.DisplayName.ToLower());
+		}
+
+		[Test()]
 		public void Test_ChannelSearch() {
 			List<TwitchChannel> ch = client.SearchForChannels("amaz");
 			Assert.NotNull(ch);
@@ -36,7 +44,14 @@ namespace Tests {
 			Assert.IsNotEmpty(gm);
 			TwitchGame leagueGame = gm[0];
 			Assert.NotNull(leagueGame.Name);
-			Assert.Equals(leagueGame.Name, "League of Legends");
+			Assert.AreEqual(leagueGame.Name, "League of Legends");
+		}
+
+		[Test()]
+		public void Test_TopGames() {
+			List<TwitchGame> gm = client.TopGames();
+			Assert.NotNull(gm);
+			Assert.IsNotEmpty(gm);
 		}
 
 	}

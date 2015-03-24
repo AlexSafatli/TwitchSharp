@@ -1,5 +1,4 @@
-﻿using System;
-
+﻿
 namespace TwitchSharp
 {
 	public class TwitchVideo : TwitchAbstractVideo
@@ -7,6 +6,7 @@ namespace TwitchSharp
 		public TwitchVideo ()
 		{
 		}
+
 	}
 }
 

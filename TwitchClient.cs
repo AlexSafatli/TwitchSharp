@@ -37,11 +37,27 @@ namespace TwitchSharp {
 		/* Objects By Name */
 		public TwitchChannel ChannelByName(string channelName) {
 			RestRequest request = TwitchGetRequest(string.Format("channels/{0}",channelName));
-			RestResponse<TwitchChannel> response = (RestResponse<TwitchChannel>)
-				Execute<TwitchChannel>(request);
+			var response = (RestResponse<TwitchChannel>)Execute<TwitchChannel>(request);
+			var ch = response.Data;
+			if (ch != null) {
+				RestRequest streamRequest = TwitchGetRequest(string.Format("streams/{0}",channelName));
+				var stream = (RestResponse<TwitchChannelStream>)Execute<TwitchChannelStream>(streamRequest);
+				if (stream != null) {
+					ch.Stream = stream.Data.Stream;
+				}
+			}
+			return ch;
+		}
+		public TwitchUser UserByName(string userName) {
+			RestRequest request = TwitchGetRequest(string.Format("users/{0}",userName));
+			var response = (RestResponse<TwitchUser>)Execute<TwitchUser>(request);
 			return response.Data;
 		}
-
+		public List<TwitchGame> TopGames() {
+			RestRequest request = TwitchGetRequest("games/top");
+			var response = (RestResponse<List<TwitchGame>>)Execute<List<TwitchGame>>(request);
+			return response.Data;
+		}
 
 	}
 }

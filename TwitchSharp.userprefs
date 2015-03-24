@@ -1,6 +1,6 @@
 ﻿<Properties StartupItem="TwitchSharp.csproj">
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Model/TwitchChannel.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Model/TwitchVideo.cs">
     <Files>
       <File FileName="Interfaces/ITwitchClient.cs" Line="1" Column="1" />
       <File FileName="Model/TwitchAbstractChannel.cs" Line="1" Column="1" />
@@ -9,8 +9,8 @@
       <File FileName="Model/TwitchAbstractTeam.cs" Line="1" Column="1" />
       <File FileName="Model/TwitchAbstractUser.cs" Line="1" Column="1" />
       <File FileName="Model/TwitchAbstractVideo.cs" Line="1" Column="1" />
-      <File FileName="TwitchClient.cs" Line="3" Column="3" />
-      <File FileName="Model/TwitchChannel.cs" Line="2" Column="2" />
+      <File FileName="TwitchClient.cs" Line="1" Column="1" />
+      <File FileName="Model/TwitchChannel.cs" Line="15" Column="3" />
       <File FileName="Tests/packages.config" Line="1" Column="1" />
       <File FileName="Tests/Test.cs" Line="1" Column="1" />
       <File FileName="Model/TwitchGame.cs" Line="1" Column="1" />
@@ -20,6 +20,9 @@
       <File FileName="Model/TwitchBadge.cs" Line="1" Column="1" />
       <File FileName="Model/TwitchEmoticon.cs" Line="1" Column="1" />
       <File FileName="Model/TwitchSearch.cs" Line="1" Column="1" />
+      <File FileName="Model/TwitchTeam.cs" Line="9" Column="2" />
+      <File FileName="Model/TwitchUser.cs" Line="5" Column="46" />
+      <File FileName="Model/TwitchVideo.cs" Line="5" Column="27" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
