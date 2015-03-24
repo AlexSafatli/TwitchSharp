@@ -50,6 +50,9 @@
     <Compile Include="Model\TwitchBadge.cs" />
     <Compile Include="Model\TwitchEmoticon.cs" />
     <Compile Include="Model\TwitchSearch.cs" />
+    <Compile Include="Model\TwitchTeam.cs" />
+    <Compile Include="Model\TwitchUser.cs" />
+    <Compile Include="Model\TwitchVideo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
