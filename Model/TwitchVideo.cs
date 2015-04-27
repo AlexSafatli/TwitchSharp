@@ -1,12 +1,5 @@
-﻿
-namespace TwitchSharp
-{
-	public class TwitchVideo : TwitchAbstractVideo
-	{
-		public TwitchVideo ()
-		{
-		}
+﻿namespace TwitchSharp {
+	public class TwitchVideo : TwitchAbstractVideo {
 
 	}
 }
-

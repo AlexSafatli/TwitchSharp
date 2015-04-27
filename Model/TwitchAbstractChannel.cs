@@ -40,6 +40,7 @@ namespace TwitchSharp {
 		public abstract bool updateStatus(TwitchClient client, string status);
 		public abstract bool updateGame(TwitchClient client, TwitchGame game);
 		public abstract bool updateDelay(TwitchClient client, int delay);
+		public abstract bool startCommercial(TwitchClient client, int length);
 
 	}
 }
